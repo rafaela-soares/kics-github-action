@@ -21,6 +21,7 @@ jobs:
           ignore_on_exit: results
           enable_comments: true
           comments_with_queries: true
+          cloud_provider: aws
           excluded_column_for_comments_with_queries: "description_id,similarity_id,search_line,search_value,cis_description_id,cis_description_title,cis_description_text,cloud_provider"
       - run: ls -la && ls -la myoutput
         if: always()
